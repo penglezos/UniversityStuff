@@ -91,6 +91,10 @@
 		<?php 
 			echo "<p>".date("d/m/Y",time())."</p>";
 			echo "<p>".time()."</p>";
+			echo "<p>".date("G:i:s", time())."</p>";
+			date_default_timezone_set('Europe/Athens');
+			setlocale(LC_TIME,'el-GR.UTF-8');
+			echo "<p>".date("G:i:s",time())."</p>"; 
 		?>
 	</body>
 </html> 
