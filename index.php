@@ -97,7 +97,7 @@
 			echo "<p>".date("G:i:s",time())."</p>"; 
 			//kwdika tha elenxi tin imera tis evdomados kai ean einai deutera na leei kalimera
 			if (date("w",time()) == 1) {
-				echo "Kali evdomada";
+				echo "Kali evdomada <br>";
 			}
 			if (date("w",time()) == 5) {
 				echo "Kalo savvatokyriako";
@@ -108,11 +108,15 @@
 			$day = date("w",time());
 			$hour = date("G",time());
 			if ($day >=1 && $day <=5 && $hour >=8 && $hour <=16) {
-				echo "Access Granted";
+				echo "Access Granted<br>";
 			}
 			else {
 				echo "Access Denied";
 			}
+			$month = date("n",time())-1;
+			$dates = array("Κυριακή","Δευτέρα", "Τρίτη", "Τετάρτη", "Πέμπτη", "Παρασκευή", "Σάββατο");
+			$months = array("Ιανουάριος","Φεβρουάριος","Μάρτιος","Απρίλιος","Μάιος","Ιούνιος","Ιούλιος","Αύγουστος","Σεπτέμβριος","Οκτόβριος","Νοέμβρης","Δεκέμβρης");
+			echo"<p>".$dates[$day]." ".date("d",time())."".$months[$month]."".date("Y",time())."</p>";
 		?>
 	</body>
 </html> 
