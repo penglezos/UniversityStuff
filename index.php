@@ -93,8 +93,26 @@
 			echo "<p>".time()."</p>";
 			echo "<p>".date("G:i:s", time())."</p>";
 			date_default_timezone_set('Europe/Athens');
-			setlocale(LC_TIME,'el-GR.UTF-8');
+			setlocale(LC_TIME,' el-GR.UTF-8');
 			echo "<p>".date("G:i:s",time())."</p>"; 
+			//kwdika tha elenxi tin imera tis evdomados kai ean einai deutera na leei kalimera
+			if (date("w",time()) == 1) {
+				echo "Kali evdomada";
+			}
+			if (date("w",time()) == 5) {
+				echo "Kalo savvatokyriako";
+			}
+			if (date("w",time()) >=2 && date("w",time()) < 5) {
+				echo "kali ergasia";
+			}
+			$day = date("w",time());
+			$hour = date("G",time());
+			if ($day >=1 && $day <=5 && $hour >=8 && $hour <=16) {
+				echo "Access Granted";
+			}
+			else {
+				echo "Access Denied";
+			}
 		?>
 	</body>
 </html> 
