@@ -147,18 +147,22 @@
 				echo "<p>".$pointer." = ".$value."</p>";
 				echo "<p>".$social_media[$pointer]."</p>";
 
-				if ($pointer == 0) {
-					echo "<img src='img/fb.png' width='100' height='100' />";
+				echo "<p><img width=\"100\"src=\"img/".$pointer.".png\"/>".$value."</p>";
+
+				/*if ($pointer == 0) {
+					echo "<img src='img/0.png' width='100' height='100' />";
 				}	
 				if ($pointer == 1) {
-					echo "<img src='img/twitter.png' width='100' height='100' />";
+					echo "<img src='img/1.png' width='100' height='100' />";
 				}
 				if ($pointer == 2) {
-					echo "<img src='img/ig.png' width='100' height='100' />";
+					echo "<img src='img/2.png' width='100' height='100' />";
 				}
 				if ($pointer == 3) {
-					echo "<img src='img/youtube.png' width='100' height='100' />";
+					echo "<img src='img/3.png' width='100' height='100' />";
 				}
+				*/
+
 			}
 			
 			
