@@ -162,11 +162,25 @@
 					echo "<img src='img/3.png' width='100' height='100' />";
 				}
 				*/
-
 			}
-			
-			
 		?>
 
+		<h2>Πίνακες</h2>
+		<?php
+			$products  = array(array("Προιον Α",200),
+						array("Προιον Β",50),
+						array("Προιον Γ",350));
+			echo "<pre>";
+			print_r($products);
+			echo "</pre>";
+
+
+			$pelates = array(array("1", "Όνομα","Επώνυμο","Email","ID","Password","Διεύθυνση"),	
+							array("2", "Όνομα","Επώνυμο","Email","ID","Password","Διεύθυνση"),
+							array("3", "Όνομα","Επώνυμο","Email","ID","Password","Διεύθυνση"));
+			echo "<pre>";
+			print_r($pelates);
+			echo "</pre>";
+		?>
 	</body>
 </html> 
