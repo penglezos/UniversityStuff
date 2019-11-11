@@ -218,5 +218,32 @@
 			</div>
 			<?php } ?>
 		</section>
+
+		<h2>ΠΕΛΑΤΕΣ</h2>
+		<?php
+			$clients = array(array("Englezos","Panagiotis","panagiotisegl@gmail.com"),
+							array("Kamxios","Kitsos","kitsospapaki@gmail.com"),
+							array("Kikos","Litsos","kikoslitsos@gmail.com"));	
+		?>
+
+		<section id="clients">
+			<?php
+				foreach($clients as $client) { ?>
+					<div class="clients-item">
+						<div class="clients-image">
+							<img width="100" src="img/<?=$client[0]?>.jpg"/>
+						</div>
+					<div class="client-surname">
+						<h3><?=$client[0]?></h3>
+					</div>
+					<div class="client-name">
+						<p><?=$client[1]?></p>
+					</div>
+					<div class="client-email">
+						<p><?=$client[2]?></p>
+					</div>
+				</div>
+				<?php } ?>
+			</section>
 	</body>
 </html> 
