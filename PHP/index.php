@@ -181,6 +181,19 @@
 			echo "<pre>";
 			print_r($pelates);
 			echo "</pre>";
+			
+			foreach($pelates as $value) {
+				echo "<p>";
+				foreach($value as $pelatis) {
+					echo $pelatis."";
+				}
+				echo "</p>";
+			}
+			
+			foreach($pelates as $value) {
+				echo "<p>".$value[a]." ".$value[1]." ".$value[2]." ".$value[4]."</p>";
+			}
+
 		?>
 	</body>
 </html> 
