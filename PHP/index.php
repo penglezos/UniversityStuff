@@ -191,9 +191,32 @@
 			}
 			
 			foreach($pelates as $value) {
-				echo "<p>".$value[a]." ".$value[1]." ".$value[2]." ".$value[4]."</p>";
+				echo "<p>".$value[a]." ".$value[1]." ".$value[2]."  ".$value[4]."</p>";
 			}
-
 		?>
+
+		<h2>PHP + HTML + CSS</h2>
+		<?php
+			$products = array(array("274589","Samsung S10",987,5,10),
+							array("389200","iPhone 11 Pro",1200,3,5),
+							array("776321","XIAOMI Redmi Note 4",160,10,0));	
+		?>
+		<h2>ΠΡΟΙΝΤΑ</h2>
+		<section id="products">
+			<?php
+				foreach($products as $product) { ?>
+				<div class="products-item">
+					<div class="products-image">
+						<img width="100"src="img/<?=$product[0]?>.png"/>
+					</div>
+				<div class="product-name">
+					<h3><?=$product[1]?></h3>
+				</div>
+				<div class="product-price">
+					<p><?=$product[2]?> &euro;</p>
+				</div>
+			</div>
+			<?php } ?>
+		</section>
 	</body>
 </html> 
