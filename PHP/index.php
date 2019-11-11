@@ -135,5 +135,34 @@
 				echo "<p>".$months[$pointer]."</p>";
 			}
 		?>
+		
+		<?php
+			$social_media = array("facebook.com", "twitter.com", "instagram.com", "youtube.com");
+			echo"$social_media[0]<br>";
+			echo"$social_media[1]<br>";
+			echo"$social_media[2]<br>";
+			echo"$social_media[3]<br>";
+
+			foreach ($social_media as $pointer => $value) {
+				echo "<p>".$pointer." = ".$value."</p>";
+				echo "<p>".$social_media[$pointer]."</p>";
+
+				if ($pointer == 0) {
+					echo "<img src='img/fb.png' width='100' height='100' />";
+				}	
+				if ($pointer == 1) {
+					echo "<img src='img/twitter.png' width='100' height='100' />";
+				}
+				if ($pointer == 2) {
+					echo "<img src='img/ig.png' width='100' height='100' />";
+				}
+				if ($pointer == 3) {
+					echo "<img src='img/youtube.png' width='100' height='100' />";
+				}
+			}
+			
+			
+		?>
+
 	</body>
 </html> 
