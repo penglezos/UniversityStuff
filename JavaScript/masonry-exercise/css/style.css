@@ -5,3 +5,11 @@
 .grid-item img { width: 100% }
 
 .center { text-align: center; margin: 0 auto; }
+
+nav { margin: 20px; display: block;}
+nav * { display: inline-block; margin-bottom: 5px;}
+nav > span { font-weight: bold;}
+nav ul { margin: 0; padding: 0; float: right; list-style: none; }
+nav ul li { margin: 0 10px; }
+@media (max-width: 550px) { nav ul { width: 100%; } }
+@media (max-width: 550px) { nav { text-align: center; } }
