@@ -3,3 +3,5 @@
     margin-right: 5px;
 }
 .grid-item img { width: 100% }
+
+.center { text-align: center; margin: 0 auto; }
