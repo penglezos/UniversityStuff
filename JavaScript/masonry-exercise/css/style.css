@@ -1,11 +1,8 @@
 body {
     background-color: #292A2D;
 }
-.grid-item {
-    width: 300px;
-    margin-right: 5px;
-}
-.grid-item img { width: 100% }
+.grid-item { width: 100%;}
+.grid-item img { width: 100%; }
 
 h1,
 h2,
@@ -17,7 +14,7 @@ a {
     color: white;
 }
 
-.center { text-align: center; margin: 0 auto; }
+.center { text-align: center; margin: 0 auto; } 
 .round { border-radius: 50%; }
 
 nav { margin: 20px; display: block;}
