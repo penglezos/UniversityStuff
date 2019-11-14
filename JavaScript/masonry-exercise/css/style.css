@@ -1,8 +1,10 @@
 body {
     background-color: #292A2D;
 }
-.grid-item { width: 100%;}
-.grid-item img { width: 100%; }
+.grid-item { width: 1000px;
+    margin-left: 150px;
+}
+.grid-item img { width: 1000px; }
 
 h1,
 h2,
