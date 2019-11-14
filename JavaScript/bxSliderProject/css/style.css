@@ -1,0 +1,10 @@
+.slider-container {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.slider-item {
+	height:400px;
+	background-size: cover;
+	background-position: center;
+}
