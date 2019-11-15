@@ -1,10 +1,10 @@
 body {
     background-color: #292A2D;
 }
-.grid-item { width: 1000px;
+.grid-item { width: 400px;
     margin-left: 150px;
 }
-.grid-item img { width: 1000px; }
+.grid-item img { width: 400px; }
 
 h1,
 h2,
