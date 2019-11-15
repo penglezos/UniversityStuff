@@ -25,7 +25,7 @@ void validate(time *t) {
 		t -> hours = 0;
 		cout<<"ektos orion oi ores eginan 0"<<endl;
 	}
-	if (t -> minutes < 0 && t -> minutes > 60) {
+	if (t -> minutes < 0 || t -> minutes > 60) {
 		t -> minutes = 0;
 		cout<<"......"<<endl;
 	}
