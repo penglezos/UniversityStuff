@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
+body {
+	font-family: 'Pacifico', cursive;
+}
+
+#sortable {
+	list-style: none;
+	width: 460px;
+}
+
+#sortable li {
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	font-size: 40px;
+	float: left;
+	border: solid 1px lightgray;
+	background-color: #eee;
+	margin: 2px;
+	cursor: pointer;
+	border-radius: 4px;
+	user-select: none;
+}
