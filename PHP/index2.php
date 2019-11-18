@@ -37,5 +37,18 @@
         }
         grdate();
     ?>
+    <?php
+        function sum($a,$b) {
+            echo ($a + $b);
+        }
+        sum(5,10);
+        $omades=array("ΠΑΟΚ","ΑΡΗΣ","ΗΡΑ");
+        function myprint_r($omades) {
+            echo "<pre>";
+            print_r($omades);
+            echo "</pre>";
+        }
+        myprint_r($omades);
+    ?>
     </body>
 </html>
