@@ -50,5 +50,15 @@
         }
         myprint_r($omades);
     ?>
+    <?php 
+        function mytime() {
+            return date("G:i:s",time());
+        }
+        echo mytime();
+        //second example
+        $time = mytime();
+        echo "<p>".$time."</p>";
+        echo "<p>".mytime()."</p>";
+    ?>
     </body>
 </html>
