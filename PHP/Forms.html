@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>
+	    HTML Forms
+		</title>
+		<meta charset="utf-8"/>
+	</head>
+	<body>
+		<h1>Φόρμα επικοινωνίας</h1>
+		<form action="register.php" method="post">
+			<p>
+				<label for="eponimo">Επώνυμο :
+					<input type="text" name="eponimo" size="35" placeholder="Επώνυμο" maxlength="35" />
+				</label>
+			</p>
+			<p>
+				<label for="onoma">Όνομα :
+					<input type="text" name="onoma" size="15" placeholder="Όνομα" maxlength="15" />
+				</label>
+			</p>
+			<p>
+				<label for="email">Email :
+					<input type="text" name="email" size="35" placeholder="Email" maxlength="35" />
+				</label>
+			</p>
+			<p>
+				<label for="email">Email (html5) :
+					<input type="email" name="email-html" size="35" placeholder="Email (html5)" maxlength="35" />
+				</label>
+			</p>
+			<p>
+				<label for="zip">Τ.Κ. (html5) :
+					<input type="number" name="zip" size="5" placeholder="T.K. (html5)" maxlength="5" />
+				</label>
+			</p>
+			<p>
+				<label for="birthdate">Ημερ. Γέννησης :
+					<input type="text" name="birthdate" size="10" placeholder="Ημερομηνία γέννησης" maxlength="10" />
+				</label>
+			</p>
+			<p>
+				<label for="birthdate">Ημερ. Γέννησης (html5) :
+					<input type="date" name="birthdate" size="10" placeholder="Ημερομηνία γέννησης" maxlength="10" /> 
+					(*)
+				</label>
+			</p>
+			<p>
+				<label for="birthtime">Ωρα Γέννησης (html5) :
+					<input type="time" name="birthtime" size="10" placeholder="Ώρα γέννησης" maxlength="10" />
+				</label>
+			</p>
+			<p><h2>Φύλο</h2>
+				<label for="sex">Άνδρας :
+					<input type="radio" name="sex" value="male"/>
+				</label>
+				<label for="sex">Γυναίκα :
+					<input type="radio" name="sex" value="female"/>
+				</label>
+			</p>
+			<p>
+				<label for="newsletter">Εγγραφή στο newsletter :
+					<input type="checkbox" name="newsletter" value="true" checked="checked"/>
+				</label>
+			</p>
+			<p>
+				<label for="oroi">Αποδέχομαι τους όρους  χρήσης :
+					<input type="checkbox" name="oroi" value="true"/>
+				</label>
+			</p>
+			<p>
+				<label for="country">Χώρα :
+					<select name="country">
+						<option value="">Επιλέξτε χώρα</option>
+						<option selected="selected" value="ΕΛΛΑΔΑ">ΕΛΛΑΔΑ</option>
+						<option value="ΚΥΠΡΟΣ">ΚΥΠΡΟΣ</option>
+						<option value="ΙΤΑΛΙΑ">ΙΤΑΛΙΑ</option>
+					</select>
+				</label>
+			</p>
+			<p>
+				<label for="lessons">Λίστα μαθημάτων :<br />
+					<select name="lessons" size="8" multiple="multiple">						
+						<option value="">Παρακαλώ επιλέξτε μαθήματα</option>
+						<option value="html">HTML</option>
+						<option value="c">C</option>
+						<option value="office">Ms Office</option>
+						<option value="css">CSS</option>
+					</select><br />
+					ctrl+κλικ για πολλαπλές επιλογές
+				</label>
+			</p>
+			<p>
+				<label for="eidikotites">Ειδικότητες (Λίστα με ομάδες):<br />
+					<select name="eidikotites">
+						<option value="">Επιλέξτε ειδικότητα</option>
+						<optgroup label="Πληροφορική">
+							<option value="tech">Τεχνικός Η/Υ</option>
+							<option value="net">Τεχνικός Δικτύων και Τηλέπικοινωνιών</option>
+							<option value="web">Web Designer - Developer , Video Games</option>
+							<option value="soft">ΤΕχνικός Λογισμικού</option>							
+						</optgroup>
+					<optgroup label="Οικονομία & Διοικηση">
+						<option value="logistiki">Λογιστική</option>
+						<option value="marketing">Marketing</option>
+							
+					</optgroup>
+					</select><br />
+					ctrl+κλικ για πολλαπλές επιλογές
+				</label>
+			</p>
+			
+
+			<p>
+				<label for="notes">Σχόλια :<br />
+					<textarea name="notes" rows="10" cols="30"></textarea>
+				</label>
+			</p>
+			<p>
+				<label for="password">Password :<br />
+					<input type="password" name="password" />
+				</label>
+			</p>
+			<p>
+				<label for="color">Επιλέξτε χρώμα :<br />
+					<input type="color" name="color" />
+				</label>
+			</p>
+			<p>
+				<label for="price">Επιλέξτε χρώμα :<br />
+					<input type="range" name="price" min="10" max="2500" />
+				</label>
+			</p>
+			<p>
+				<label for="avatar">Avatar :<br />
+					<input type="file" name="avatar" multiple="multiple" />
+				</label>
+			</p>
+			<p>
+				<label for="search">Αναζήτηση :<br />
+					<input type="search" name="search" />
+				</label>
+			</p>
+			<p>
+				<label for="week">Εβδομάδα :<br />
+					<input type="week" name="week" />
+				</label>
+			</p>
+			
+			<p>
+				<button type="submit">Αποστολή</button>
+				<button type="reset">Καθαρισμός</button>
+				<button type="button">Javascript</button>
+			</p>
+			<p>
+				<button type="submit">Αποστολή</button>
+				
+		</form>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
