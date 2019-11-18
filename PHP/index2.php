@@ -73,6 +73,35 @@
             return false;
         }
         var_dump(search_array($nums,$num));
+        var_dump($num);
+    ?>
+    <h2>String function</h2>
+    <?php
+        $str = "web designer developer";
+        var_dump($str);
+        echo "<p>".strlen($str)."</p>";
+        echo "<p>".str_replace("D","@",$str)."</p>";
+        echo "<p>".strpos($str,"D")."</p>";
+        echo "<p>".strrpos($str,"D")."</p>";
+        echo "<p>".strtoupper($str)."</p>";
+        echo "<p>".strtolower($str)."</p>";
+        $strwords=explode(" ",$str);
+        var_dump($strwords); 
+        echo implode(",",$strwords);
+    ?>
+    <?php
+        $str = "<b>Web designer</b>";
+        echo "<p>".$str."</p>";
+        echo "<p>".strip_tags($str)."</p>";
+        $str="<script>alert('XSS Attack');</script>";
+        echo $str;
+        echo strip_tags($str);
+    ?>
+    <?php
+        $password="Dim1234@";
+        echo "<p>".$password."</p>";
+        echo "<p>".md5($password)."</p>";
+        echo "<p>".hash("SHA512",$password)."</p>";
     ?>
     </body>
 </html>
