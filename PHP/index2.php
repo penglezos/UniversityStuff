@@ -56,9 +56,23 @@
         }
         echo mytime();
         //second example
-        $time = mytime();
+        $time = mytime();  
         echo "<p>".$time."</p>";
         echo "<p>".mytime()."</p>";
+    ?>
+    <?php
+        $nums = array(5,10,20,30,7);
+        $num = 10;
+
+        function search_array($array, $index) {
+            foreach($array as $value) {
+                if($value == $index) {
+                    return true;
+                }
+            }
+            return false;
+        }
+        var_dump(search_array($nums,$num));
     ?>
     </body>
 </html>
