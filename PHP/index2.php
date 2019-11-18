@@ -43,9 +43,9 @@
         }
         sum(5,10);
         $omades=array("ΠΑΟΚ","ΑΡΗΣ","ΗΡΑ");
-        function myprint_r($omades) {
+        function myprint_r($array) {
             echo "<pre>";
-            print_r($omades);
+            print_r($array);   
             echo "</pre>";
         }
         myprint_r($omades);
