@@ -77,6 +77,18 @@
 				echo $_POST['email'];
 			}
 	  ?>
+	  <?php
+		if(empty($_POST['surname'])){
+			echo "<p>Doste eponimo</p>";
+		} else if(!preg_match(
+			'/^[a-z A-Z\x{0386}-\x{03CE}\S] + $/u',
+			$_POST['surname'])) {
+				echo "<p>Lathos eponimo</p>";
+			}
+			else {
+				echo "<p>".$_POST['surname']."</p>";
+			}
+	  ?>
 		<!-- 
 			<pre>
 		<?php
