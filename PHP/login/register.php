@@ -34,7 +34,7 @@
       <input type="" class="form-control" name="name" placeholder="Όνομα"/> 
       </br>    
       Email
-      <input type="text" class="form-control" name="username" placeholder="Email"  autofocus="" />
+      <input type="text" class="form-control" name="email" placeholder="Email"  autofocus="" />
       </br> 
       Κωδικός
       <input type="password" class="form-control" name="password" placeholder="Password"/> 

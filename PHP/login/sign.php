@@ -65,6 +65,18 @@
 			echo "<p>oi kodikoi den teriazoun</p>";
 		}
 	  ?>
+	  <?php
+		if(empty($_POST['email'])){
+			echo "<p>Dose email!!</p>";
+		}
+		else if (!filter_var($_POST['email'],
+			FILTER_VALIDATE_EMAIL)){
+				echo "<p>Dose ena sosto email!!</p>";
+			}
+			else {
+				echo $_POST['email'];
+			}
+	  ?>
 		<!-- 
 			<pre>
 		<?php
