@@ -1,4 +1,3 @@
- 
 <!DOCTYPE html>
 <html>
 	<head>
@@ -10,7 +9,7 @@
 	</head>
 	<body>
     <div class="wrapper">
-    <form class="form-signin">       
+    <form action="sign.php" method="post" class="form-signin">       
       <h2 class="form-signin-heading">Φόρμα Εγγραφής</h2>
       Επώνυμο
       <input type="text" class="form-control" name="surname" placeholder="Επώνυμο" required="" autofocus="" />
