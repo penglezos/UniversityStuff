@@ -38,15 +38,17 @@
 			<h1><?=$_GET['catname']?></h1>
 			<?php
 				//3o βημα , εκτύπωση
+				$total_exoda = 0;
 				while($exoda_record=mysqli_fetch_assoc($exoda_recordset)){
+					$total_exoda+=$exoda_record['exoda_poso'];
 				?>
 					<p>
 						<?=$exoda_record['exoda_poso']?> ,
 							<?=$exoda_record['exoda_date']?>
 					</p>
-					
 				<?php }
+			
 			?>			
-		
+		<h3>Σύνολο <?=$_GET['catname']?> = <?=number_format($total_exoda,2,',','.')?>&euro;</h3>
 	</body>
 </html>

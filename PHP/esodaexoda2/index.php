@@ -9,6 +9,12 @@
 						or die("Σφάλμα στο ερώτημα!!<hr/>".$esoda_cat_query);
 	//mysqli_query() εκτελεί ένα ερώτημα στη βάση
 
+	$exoda_cat_query="SELECT * FROM exoda_kat";
+	mysqli_query($connection,"
+    SET NAMES 'utf8'");
+	$exoda_kat_recordset=mysqli_query($connection,$exoda_cat_query) 
+						or die("Σφάλμα στο ερώτημα!!<hr/>".$exoda_cat_query);
+	//mysqli_query() εκτελεί ένα ερώτημα στη βάση
 
 ?>
 <!DOCTYPE html>
@@ -38,7 +44,8 @@
 		</style>
 	</head>
 	<body>
-		<ul class="cats">			
+	<h1>ΕΣΟΔΑ</h1>
+	<ul class="cats">			
 			<?php
 				//3o βημα , εκτύπωση
 				while($esoda_cat_record=mysqli_fetch_assoc($esoda_cat_recordset)){
@@ -46,6 +53,21 @@
 					<li>
 						<a href="esoda.php?catid=<?=$esoda_cat_record['esoda_cat_id']?>&catname=<?=$esoda_cat_record['esoda_kat_onoma']?>">
 							<?=$esoda_cat_record['esoda_kat_onoma']?>
+						</a>
+					</li>
+				<?php }
+			?>			
+		</ul>
+		<br>
+		<h1>ΕΞΟΔΑ</h1>
+		<ul class="cats">			
+			<?php
+				//3o βημα , εκτύπωση
+				while($exoda_kat_record=mysqli_fetch_assoc($exoda_kat_recordset)){
+					//print_r($exoda_cat_record);?>
+					<li>
+						<a href="exoda.php?catid=<?=$exoda_kat_record['exoda_kat_id']?>&catname=<?=$exoda_kat_record['exoda_kat_name']?>">
+							<?=$exoda_kat_record['exoda_kat_name']?>
 						</a>
 					</li>
 				<?php }
