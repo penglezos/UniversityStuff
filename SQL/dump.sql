@@ -22,3 +22,12 @@ FROM esoda
 INNER JOIN esoda_katathgoria on esoda_katathgoria.esoda_cat_id = esoda.esoda_kat_id
 
 ORDER BY esoda_date
+
+-- FIND 'DEI' IN SORTED LIST
+SELECT exoda_kat.exoda_kat_name,
+	exoda.exoda_date,
+    exoda.exoda_poso
+FROM exoda
+INNER JOIN exoda_kat on exoda_kat.exoda_kat_id = exoda.exoda_kat_id
+WHERE exoda_kat.exoda_kat_id = 1
+ORDER BY exoda.exoda_date
