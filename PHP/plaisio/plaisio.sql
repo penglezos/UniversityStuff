@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.0.1
+-- version 4.9.1
 -- https://www.phpmyadmin.net/
 --
 -- Φιλοξενητής: 127.0.0.1
--- Χρόνος δημιουργίας: 09 Ιαν 2020 στις 09:03:14
--- Έκδοση διακομιστή: 10.4.6-MariaDB
--- Έκδοση PHP: 7.3.9
+-- Χρόνος δημιουργίας: 13 Ιαν 2020 στις 09:00:15
+-- Έκδοση διακομιστή: 10.4.8-MariaDB
+-- Έκδοση PHP: 7.3.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -146,7 +146,7 @@ CREATE TABLE `payments` (
 --
 
 CREATE TABLE `products` (
-  `products_id` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `products_id` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `products_name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `products_alias` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `products_description` text COLLATE utf8_unicode_ci DEFAULT NULL,
@@ -157,6 +157,16 @@ CREATE TABLE `products` (
   `products_views` int(11) DEFAULT NULL,
   `products_warranty` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Άδειασμα δεδομένων του πίνακα `products`
+--
+
+INSERT INTO `products` (`products_id`, `products_name`, `products_alias`, `products_description`, `products_quantity`, `products_price`, `products_offer`, `subcategories_id`, `products_views`, `products_warranty`) VALUES
+('2895684', 'Corsair Desktop RAM Vengeance 8GB 3000MHz DDR4\r\n', 'Corsair-Desktop-RAM-Vengeance-8GB 3000MHz-DDR4', 'Απόλαυσε υψηλές ταχύτητες λειτουργίας, με γρήγορους χρονισμούς, προηγμένες δυνατότητες Overclocking και ψύκτρα αλουμινίου!\r\n', 3, 59.00, 20, 3, NULL, NULL),
+('2982129', 'Intel CPU Core i9 9900K (1151/3.6 GHz/16 MB)\r\n', 'Intel-CPU-Core-i9-9900K-(1151-36-GHz-16 MB)', 'Gaming σε άλλο επίπεδο, δημιουργία δίχως όρια, υψηλοί χρονισμοί, ψυχαγωγία σε UHD και Hardware-Based ασφάλεια: αυτοί είναι οι Intel Core 9ης Γενιάς\r\n', 3, 569.00, 15, 1, NULL, 3),
+('3072673', 'AMD CPU Ryzen 5 3600 (AM4/3.6 GHz/36 MB)', 'AMD-CPU-Ryzen-5-3600-(AM4-36-GHz-36-MB)\r\n', 'Mε πυρήνες αρχιτεκτονικής Zen 2 και υψηλότερους χρονισμούς, περισσότερο bandwidth, υποστήριξη PCIe 4.0 και αποκλειστικές τεχνολογίες AMD, επαναπροσδιορίζουν την απόδοση των Gaming PCs!', 5, 249.00, 20, 1, NULL, 3),
+('3117642', 'Corsair Desktop RAM Vengeance Pro RGB 32GB Kit 3466MHz DDR4\r\n', 'Corsair-Desktop-RAM-Vengeance-Pro-RGB-32GB Kit-3466MHz-DDR4', '32GB μνήμης RAM DDR4 για υψηλές επιδόσεις και χρονισμούς, με built-in heat spreaders και multi-zone RGB φωτισμό που συμπληρώνει το στυλ κάθε gamer\r\n', 5, 309.90, 10, 3, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -252,6 +262,12 @@ ALTER TABLE `categories`
 --
 ALTER TABLE `payments`
   ADD PRIMARY KEY (`payments_id`);
+
+--
+-- Ευρετήρια για πίνακα `products`
+--
+ALTER TABLE `products`
+  ADD PRIMARY KEY (`products_id`);
 
 --
 -- Ευρετήρια για πίνακα `product_reviews`

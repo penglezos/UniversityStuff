@@ -102,6 +102,9 @@ body{
 	text-align:center;
 	height:225px;
 }
+.products-home-item  .items-img img{
+	width:60%;
+}
 .products-home-item .items-title p{
 	text-align:center;
 	font-weight:bold;
@@ -112,7 +115,7 @@ body{
 	font-size:1.1em !important;
 	text-decoration:none;
 	text-align:center;
-	margin:0 0 15px 0; 
+	margin:10px 0 15px 0; 
 }
 .products-home-item .items-price-old{
 	color:gray;

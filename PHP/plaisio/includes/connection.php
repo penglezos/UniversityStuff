@@ -3,7 +3,7 @@
 	$host="localhost";
 	$user="root";
 	$pass="";
-	$database="plaisio";
+	$database="eshop";
 	
 	$connection=@mysqli_connect($host,$user,$pass,$database);
 		/* η mysqli_connect επιστρέφει FALSE όταν υπάρχει πρόβλημα 

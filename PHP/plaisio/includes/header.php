@@ -1,14 +1,14 @@
 <header class="row clearfix">
 				<div class="col15">
 					<div id="logo">
-						<a href="index.html">
+						<a href="index.php">
 							<h1>SimplePSD</h1>
 						</a>
 					</div>
 				</div>				
 				<div class="col60">
 					<div id="search">
-						<form action="" method="post">
+						<form action="products.php" method="get">
 							<input type="search" name="keyword" placeholder="Αναζήτηση..."/>
 							<select name="category">
 								<option value="">All Categories</option>
