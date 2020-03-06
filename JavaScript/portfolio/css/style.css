@@ -1,0 +1,95 @@
+html,body{
+	margin:0;
+	padding:0;
+	font-family: 'Josefin Slab', serif;
+}
+#logo{
+	margin:40px 0;
+}
+#menu{
+	border-top:solid 1px black;
+	border-bottom:solid 1px black;
+	margin:0;
+	padding:0;
+}
+#menu li{
+	display:inline-block;
+	margin-left:-4px;
+}
+#menu li a{
+	padding:20px;
+	font-size:26px;
+	display:inline-block;
+	font-weight:400;
+}
+#menu li a.active{
+	font-weight:700;
+}
+.big-title{
+	text-align: center;
+	font-size: 4rem;
+	font-weight: 100;
+	border-bottom: solid 1px black;
+	margin-top: 30px;
+	margin-bottom: 106px;
+}
+.big-title span{
+	background-color: #fff;
+	position: relative;
+	top: 2.41rem;
+	padding: 0 4rem;
+}
+#download-cv-container{
+	padding-bottom: 2rem;
+}
+.large-btn{
+	border: solid 1px black;
+	color: black;
+	background-color: transparent;
+	transition: all 0.2s linear;
+	padding: 1.75rem 6rem 2rem;
+	display: inline-block;
+	font-size: 3rem;
+	font-weight: 100;
+}
+.large-btn:hover{
+	background-color:black;
+	color:white;
+}
+#welcome{
+	font-size:14px;
+	padding:10px;
+}
+.project-image{
+	margin:8px 10px;
+	position:relative;
+}
+.project-title{
+	position:absolute;
+	top:0;
+	bottom:0;
+	right:0;
+	left:0;
+	background-color:rgba(255,255,255,0.8);
+	text-align:center;
+	padding-top: 45%;
+    font-size: 28px;
+	opacity:0;
+	transition:opacity 0.3s ease-in-out;
+}
+.project-image:hover .project-title{
+	opacity:1;
+}
+.project-category{
+	color:grey;
+	margin-top: 20px;
+    font-size: 16px;
+}
+.project-image-wide{
+	margin-bottom:4rem;
+}
+footer{
+	color:grey;
+	margin:50px 0 20px;
+	font-size:12px;
+}
